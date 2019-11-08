@@ -1,29 +1,27 @@
 # tabbar
 
-## Project setup
+## 下载到本地后，先初始化需要的插件
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 打包
 ```
 npm run build
 ```
+# 介绍
+## 本项目实现：基于vue的底部导航栏功能的封装模块，使用核心为vue组件与插槽标签结合。
+## 使用者可以：在MainTabBar.vue组件中自定义菜单栏中子项的个数、上下排按键的图片文字、路由跳转路径、按钮点击后颜色（不设置即为默认红色）。
+# 插槽标签
+## 在组件内部使用，用于被使用者在相应组件标签中输入的标签所替换。通常外部包裹DIV标签，用于对传来的替换标签添加条件样式。
+```
+<div v-if="!isActive">
+ <slot></slot>
+</div>
+```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
